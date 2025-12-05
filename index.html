@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MVB-Basquete — O basquete move o jogo</title>
+  <meta name="description" content="Treinos, equipamentos e eventos para apaixonados por basquete." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="https://png.pngtree.com/png-clipart/20241003/original/pngtree-basketball-fire-ball-on-transparent-png-image_16176176.png" alt="Logo MVB-Basquete" class="logo-img" />
+      <div>
+        <h1 class="sitename">MVB-Basquete</h1>
+        <p class="tagline">Paixão, Treino e Jogo</p>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <nav aria-label="Menu principal">
+        <a href="#treinos">Treinos</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#eventos">Eventos</a>
+        <a class="cta" href="#contato">Entrar na Quadra</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Eleve seu jogo — MVB-Basquete</h2>
+        <p>Treinos, equipamentos e eventos criados para quem respira basquete.</p>
+        <button class="primary" onclick="alertaCTA()">Treinar agora</button>
+      </div>
+
+      <div class="hero-img" aria-hidden="true"></div>
+    </section>
+
+    <section id="treinos" class="fade-in">
+      <h3>Nossos programas de treino</h3>
+      <div class="grid">
+        <div class="card">Escolinhas</div>
+        <div class="card">Treino Avançado</div>
+        <div class="card">Preparação Física</div>
+      </div>
+    </section>
+
+    <section class="carousel-container">
+  <button class="carousel-btn prev" id="prevBtn">❮</button>
+
+  <div class="carousel" id="carousel">
+    <div class="carousel-item"><img src="https://http2.mlstatic.com/kit-5-camisas-camiseta-de-basquete-nba-regatas-bulls-lakers-D_NQ_NP_171011-MLB20472023579_112015-F.jpg" alt="Produto 1"></div>
+    <div class="carousel-item"><img src="https://tse2.mm.bing.net/th/id/OIP.zN5g6widTzDI5sfw2xwitwHaHa?pid=Api&P=0&h=180" alt="Produto 2"></div>
+    <div class="carousel-item"><img src="https://tse1.mm.bing.net/th/id/OIP.s_d3lPH9l4_ZnZH01DCfMAHaFj?pid=Api&P=0&h=180" alt="Produto 3"></div>
+    <div class="carousel-item"><img src="https://tse2.mm.bing.net/th/id/OIP.c99fItsGK7sy-rNHDpVe0wHaHa?pid=Api&P=0&h=180" alt="Produto 4"></div>
+  </div>
+
+  <button class="carousel-btn next" id="nextBtn">❯</button>
+
+  <div class="carousel-dots" id="dots"></div>
+</section>
+
+
+    <section id="eventos" class="fade-in">
+      <h3>Eventos na quadra</h3>
+      <div class="grid">
+        <div class="card">3x3 Tournaments</div>
+        <div class="card">Camp Clinics</div>
+        <div class="card">All-Star Fans</div>
+      </div>
+    </section>
+
+    <section id="contato" class="fade-in">
+      <h3>Fale com a gente</h3>
+      <form onsubmit="enviarForm(event)">
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu email" required />
+        <button type="submit" class="primary">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MVB-Basquete — Todos os direitos reservados</p>
+    <p>Siga nosso jogo nas redes | performance impulsionada por atletas</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
